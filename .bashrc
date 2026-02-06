@@ -103,6 +103,12 @@ cd() {
   builtin cd "$@" && ls -a --color=auto -F --group-directories-first
 }
 
+gcommit() {
+  git add .
+  git commit -m "$1"
+  git push
+}
+
 setup-monitors() {
   mapfile -t monitors < <(xrandr | grep -w connected)
   primary=$(printf '%s\n' "${monitors[@]}" | grep 'primary' | cut -d' ' -f1)
