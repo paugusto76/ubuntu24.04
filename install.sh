@@ -21,6 +21,15 @@ YELLOW='\033[1;33m'
 WHITE='\033[1;37m'
 
 
+# It seems that these .sources files are generated automatically... let's fix this
+if [ -f /etc/apt/sources.list.d/vscode.sources ]; then
+  sudo rm -f /etc/apt/sources.list.d/vscode.list
+fi
+if [ -f /etc/apt/sources.list.d/cursor.sources ]; then
+  sudo rm -f /etc/apt/sources.list.d/cursor.list
+fi
+
+
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Updating the system ${NOFORMAT}"
 sudo apt update -y
@@ -78,6 +87,10 @@ if ! grep -q "zhangsongcui3371/fastfetch" /etc/apt/sources.list.d/*.sources; the
   echo -e "${YELLOW}  Adding zhangsongcui3371/fastfetch repository... ${NOFORMAT}"
   sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
 fi
+if ! grep -q "cubic-wizard/release" /etc/apt/sources.list.d/*.sources; then
+  echo -e "${YELLOW}  Adding cubic-wizard/release repository... ${NOFORMAT}"
+  sudo add-apt-repository -y ppa:cubic-wizard/release
+fi
 if ! grep -q "dotnet/backports" /etc/apt/sources.list.d/*.sources; then
   echo -e "${YELLOW}  Adding dotnet/backports repository... ${NOFORMAT}"
   sudo add-apt-repository -y ppa:dotnet/backports
@@ -99,17 +112,13 @@ if [ ! -f /etc/apt/sources.list.d/vscode.sources ]; then
     echo -e "${YELLOW}  Adding packages.microsoft.com/repos/code stable main repository... ${NOFORMAT}"
     echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
   fi
-else
-  sudo rm -f /etc/apt/sources.list.d/vscode.list
 fi
-if [ ! -f /etc/apt/sources.list.d/vscode.sources ]; then
+if [ ! -f /etc/apt/sources.list.d/cursor.sources ]; then
   if [ ! -f /etc/apt/sources.list.d/cursor.list ]; then
     echo -e "${YELLOW}  Adding downloads.cursor.com/apt stable main repository... ${NOFORMAT}"
     curl -fsSL https://downloads.cursor.com/keys/anysphere.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cursor.gpg > /dev/null
     echo "deb [signed-by=/etc/apt/keyrings/cursor.gpg] https://downloads.cursor.com/aptrepo stable main" | sudo tee /etc/apt/sources.list.d/cursor.list
   fi
-else
-  sudo rm -f /etc/apt/sources.list.d/cursor.list
 fi
 sudo apt update -y
 
@@ -157,6 +166,7 @@ XWINPACKAGES=(
   gimp
   filezilla
   keepassxc
+  cubic
 )
 
 for pkg in "${XWINPACKAGES[@]}"; do
