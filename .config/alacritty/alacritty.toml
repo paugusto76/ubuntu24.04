@@ -1,0 +1,16 @@
+[window]
+opacity = 0.9
+dynamic_title = true
+
+[font]
+size = 8.0
+normal = { family = "HackNerdFont", style = "Regular" }
+bold = { family = "HackNerdFont", style = "Bold" }
+italic = { family = "HackNerdFont", style = "Italic" }
+
+offset = { x = 0, y = 1 }
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+unfocused_hollow = true
+thickness = 0.15

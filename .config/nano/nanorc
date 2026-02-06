@@ -1,0 +1,10 @@
+include "/usr/share/nano/*.nanorc"
+
+include "/usr/share/nano/extra/*.nanorc"
+
+set linenumbers
+set numbercolor bold,gray,normal
+set titlecolor bold,lightwhite,blue
+set promptcolor bold,white,cyan
+set statuscolor bold,white,green
+set functioncolor cyan
