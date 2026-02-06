@@ -3,7 +3,6 @@
 
 ##########################
 # TODO:
-#       KeePass
 #       Screenshot tool (i3)
 #
 
@@ -156,6 +155,8 @@ XWINPACKAGES=(
   gdm-settings
   ca-certificates
   gimp
+  filezilla
+  keepassxc
 )
 
 for pkg in "${XWINPACKAGES[@]}"; do
