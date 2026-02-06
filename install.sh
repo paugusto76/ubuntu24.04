@@ -4,6 +4,7 @@
 ##########################
 # TODO:
 #       KeePass
+#       Screenshot tool (i3)
 #
 
 
