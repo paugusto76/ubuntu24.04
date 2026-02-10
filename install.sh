@@ -115,7 +115,7 @@ if [ ! -f /etc/apt/sources.list.d/vscode.sources ]; then
 fi
 if [ ! -f /etc/apt/sources.list.d/cursor.sources ]; then
   if [ ! -f /etc/apt/sources.list.d/cursor.list ]; then
-    echo -e "${YELLOW}  Adding downloads.cursor.com/apt stable main repository... ${NOFORMAT}"
+    echo -e "${YELLOW}  Adding downloads.cursor.com/aptrepo stable main repository... ${NOFORMAT}"
     curl -fsSL https://downloads.cursor.com/keys/anysphere.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cursor.gpg > /dev/null
     echo "deb [signed-by=/etc/apt/keyrings/cursor.gpg] https://downloads.cursor.com/aptrepo stable main" | sudo tee /etc/apt/sources.list.d/cursor.list
   fi
@@ -214,6 +214,7 @@ WMPACKAGES=(
   suckless-tools
   rofi
   xautolock
+  xbacklight
 )
 
 for pkg in "${WMPACKAGES[@]}"; do
@@ -225,15 +226,6 @@ for pkg in "${WMPACKAGES[@]}"; do
     sudo apt install -y "${pkg}"
   fi
 done
-
-if command -v betterlockscreen >/dev/null 2>&1; then
-    echo -e "${GREEN}  ✅ Package betterlockscreen is installed. ${NOFORMAT}"
-else
-    echo -e "${YELLOW}  ⬇️ Package betterlockscreen is not installed. ${NOFORMAT}"
-    echo "    Installing betterlockscreen..."
-    curl -fsSL https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh  | sudo bash -s system
-fi
-
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Building i3lock-color (used by betterlockscreen) ${NOFORMAT}"
@@ -282,6 +274,14 @@ else
     sudo ./install-i3lock-color.sh
     cd ..
     sudo rm -rf i3lock-color
+fi
+
+if command -v betterlockscreen >/dev/null 2>&1; then
+    echo -e "${GREEN}  ✅ Package betterlockscreen is installed. ${NOFORMAT}"
+else
+    echo -e "${YELLOW}  ⬇️ Package betterlockscreen is not installed. ${NOFORMAT}"
+    echo "    Installing betterlockscreen..."
+    curl -fsSL https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh  | sudo bash -s system
 fi
 
 
@@ -528,7 +528,7 @@ echo -e "${CYAN} -> Configure betterlockscreen ${NOFORMAT}"
 if [ -d ~/.cache/betterlockscreen/current ]; then
     echo -e "${GREEN}  ✅ betterlockscreen is already configured. ${NOFORMAT}"
 else
-    betterlockscreen -u /home/augusto/.local/share/locks/astronaut.jpg
+    betterlockscreen -u ~/.local/share/locks/astronaut.jpg
 fi
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
