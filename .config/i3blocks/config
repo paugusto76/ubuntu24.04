@@ -1,6 +1,7 @@
 
 [weather]
 command=~/.config/i3blocks/weather/weather.sh | tee /tmp/weather.log
+color=#C0A5FF
 interval=1800
 
 [BATTERY]
@@ -11,12 +12,12 @@ interval=3
 full_text= CPU:  0.00% @ +00.0°C 
 command=~/.config/i3blocks/cpu/cpu_info.sh | tee /tmp/cpu.log
 interval=repeat
-color=#00B4EB
+color=#4092FF
 
 [MEM]
 command=free -h | awk '/Mem:/ { printf(" MEM: %5s/%s \n", $3, $2) }' | tee /tmp/mem.log
 interval=1
-color=#FEC925
+color=#50C4D0
 
 #[SOUND_BURST]
 #command=~/.config/i3blocks/sound/sound_burst.sh
@@ -26,13 +27,15 @@ color=#FEC925
 full_text= 🔇:  0% 
 command=~/.config/i3blocks/sound/sound_info.sh | tee /tmp/sound.log
 interval=1
+color=#A0F0BE
 #signal=1
 
 [DISK]
 command=df -h / | awk '/\//{ printf(" FS: %4s/%s \n", $4, $2) }' | tee /tmp/disk.log
 interval=2
-color=#C9E3DB
+color=#14B949
 
 [TIME_DATE]
 command=date +" %a, %d %b - %H:%M:%S" | tee /tmp/time_date.log
+color=#FFA663
 interval=1

@@ -12,6 +12,10 @@ if [ -f /usr/bin/fastfetch ]; then
     fastfetch
 fi
 
+if [ -f /usr/games/fortune ]; then
+    fortune | cowsay -f tux | lolcat
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -150,3 +154,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 eval "$(starship init bash)"
+
