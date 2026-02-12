@@ -74,6 +74,13 @@ bindsym $mod+q exec "$HOME/.config/rofi/powermenu.sh"
 bindsym $mod+p exec "flameshot gui -p $HOME/Pictures/Screenshots"
 bindsym $mod+Shift+p exec "flameshot gui --clipboard"
 
+bindsym $mod+Shift+k exec --no-startup-id i3-msg -t get_config | grep -E '^[[:space:]]*(bindsym|bindcode)' | sed 's/^[[:space:]]*//' | sed 's/^bind\(sym\|code\) *//' | rofi -dmenu -p "i3 keybindings" -i -lines 20
+
+bindsym $mod+t exec --no-startup-id "teams-for-linux"
+bindsym $mod+y exec --no-startup-id "$HOME/.config/i3/webapp-launch.sh https://outlook.office.com/mail/"
+bindsym $mod+u exec --no-startup-id "microsoft-edge https://portal.azure.com/"
+bindsym $mod+i exec --no-startup-id "$HOME/.config/i3/webapp-launch.sh https://nokia.sharepoint.com/sites/Nokia_Central/"
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -214,7 +221,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 #}
 
 bar {
-    status_command i3blocks -c ~/.config/i3blocks/config    # or i3blocks, py3status, whatever you use
+    status_command i3blocks -c $HOME/.config/i3blocks/config    # or i3blocks, py3status, whatever you use
     position bottom               # or bottom
     height 28                  # pixels
 
@@ -247,4 +254,4 @@ bar {
 
 # start other programs
 exec --no-startup-id picom -b
-exec --no-startup-id "feh --bg-fill ~/.local/share/backgrounds/astronaut.jpg"
+exec --no-startup-id $HOME/.config/i3/monitors.sh

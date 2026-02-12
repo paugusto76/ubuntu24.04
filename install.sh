@@ -26,6 +26,7 @@ echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT
 echo -e "${CYAN} Configuration Summary: ${NOFORMAT}"
 echo -e "${WHITE}  - Install LibreOffice:${YELLOW} ${install_libreoffice} ${NOFORMAT}"
 echo -e "${WHITE}  - Install Brave:${YELLOW} ${install_brave} ${NOFORMAT}"
+echo -e "${WHITE}  - Install Firefox:${YELLOW} ${install_firefox} ${NOFORMAT}"
 echo -e "${WHITE}  - Install MS Edge:${YELLOW} ${install_edge} ${NOFORMAT}"
 echo -e "${WHITE}  - Install Intune Portal:${YELLOW} ${install_intune_portal} ${NOFORMAT}"
 echo -e "${WHITE}  - Install Cursor:${YELLOW} ${install_cursor} ${NOFORMAT}"
@@ -43,6 +44,9 @@ echo -e "${WHITE}  - Install FileZilla:${YELLOW} ${install_filezilla} ${NOFORMAT
 echo -e "${WHITE}  - Install KeePassXC:${YELLOW} ${install_keepassxc} ${NOFORMAT}"
 echo -e "${WHITE}  - Install Cubic:${YELLOW} ${install_cubic} ${NOFORMAT}"
 echo -e "${WHITE}  - Install Minecraft:${YELLOW} ${install_minecraft} ${NOFORMAT}"
+echo -e "${WHITE}  - Install Teams:${YELLOW} ${install_teams} ${NOFORMAT}"
+echo -e "${WHITE}  - Install Draw.io:${YELLOW} ${install_drawio} ${NOFORMAT}"
+echo -e "${WHITE}  - Theme:${YELLOW} ${theme} ${NOFORMAT}"
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 
 # It seems that these .sources files are generated automatically... let's fix this
@@ -75,6 +79,13 @@ else
     sudo rm -f /etc/apt/sources.list.d/cursor.list
   fi
 fi
+
+# Remove firefox from snap
+if  sudo snap list | grep firefox > /dev/null 2>&1; then 
+  sudo snap remove --purge firefox
+fi
+sudo apt remove --purge firefox -y
+sudo apt autoremove -y
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Checking repositories ${NOFORMAT}"
@@ -121,6 +132,33 @@ fi
 if [ ! -f /etc/apt/sources.list.d/spotify.list ]; then
   curl -sS https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
   echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+fi
+if [ ! -f /etc/apt/sources.list.d/teams-for-linux.sources ]; then
+  sudo wget -qO /etc/apt/keyrings/teams-for-linux.asc https://repo.teamsforlinux.de/teams-for-linux.asc
+  echo "Types: deb
+URIs: https://repo.teamsforlinux.de/debian/
+Suites: stable
+Components: main
+Signed-By: /etc/apt/keyrings/teams-for-linux.asc
+Architectures: amd64" | sudo tee /etc/apt/sources.list.d/teams-for-linux.sources
+fi
+if [ ! -f /etc/apt/preferences.d/mozilla-firefox ]; then
+  cat <<EOF | sudo tee /etc/apt/preferences.d/mozilla-firefox
+Package: *
+Pin: release o=Ubuntu*
+Pin-Priority: -1
+
+Package: firefox*
+Pin: origin packages.mozilla.org
+Pin-Priority: 1001
+EOF
+fi
+
+if [ ! -f /etc/apt/sources.list.d/mozilla.list ]; then
+  wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- \
+    | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
+  echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" \
+    | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
 fi
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
@@ -189,6 +227,9 @@ TERMPACKAGES=(
   mpg123
   ffmpeg
   ncdu
+  jq
+  tldr
+  chafa
 )
 
 for pkg in "${TERMPACKAGES[@]}"; do
@@ -505,6 +546,19 @@ if [ "$install_brave" -eq 1 ]; then
   fi
 fi
 
+if [ "$install_firefox" -eq 1 ]; then
+  echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
+  echo -e "${CYAN} -> Installing Firefox ${NOFORMAT}"
+
+  if command -v firefox >/dev/null 2>&1; then
+      echo -e "${GREEN}  ✅ Package firefox is installed. ${NOFORMAT}"
+  else
+      echo -e "${YELLOW}  ⬇️ Package firefox is not installed. ${NOFORMAT}"
+      echo "    Installing firefox..."
+      sudo apt install -y firefox
+  fi
+fi
+
 if [ "$install_edge" -eq 1 ]; then
   echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
   echo -e "${CYAN} -> Installing MS Edge ${NOFORMAT}"
@@ -617,13 +671,17 @@ fi
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Copying files ${NOFORMAT}"
 cp -f .bashrc ~
-cp -rf .local/share/fonts ~/.local/share
-cp -rf .local/share/backgrounds ~/.local/share
-cp -rf .local/share/locks ~/.local/share
-cp -rf .local/share/Nokia ~/.local/share
+cp -rf .local/share/fonts $HOME/.local/share
+cp -rf .local/share/backgrounds $HOME/.local/share
+cp -rf .local/share/locks $HOME/.local/share
+cp -rf .local/share/Nokia $HOME/.local/share
+cp -rf .local/share/gdm $HOME/.local/share
 fc-cache -f
-cp -rf .config ~
-cp -rf .vscode ~
+cp -rf .config $HOME
+cp -rf .vscode $HOME
+cp -f $HOME/.local/share/locks/${theme}.jpg $HOME/.local/share/locks/current.jpg
+cp -f $HOME/.local/share/gdm/${theme}.jpg $HOME/.local/share/gdm/current.jpg
+cp -f $HOME/.local/share/backgrounds/${theme}.jpg $HOME/.local/share/backgrounds/current.jpg
 
 if [ "$install_powershell" -eq 1 ]; then
   echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
@@ -639,6 +697,8 @@ if [ "$install_powershell" -eq 1 ]; then
   echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
   echo -e "${CYAN} -> Ensure PnP.PowerShell is installed ${NOFORMAT}"
   pwsh -nop -c "if (!(Get-Module -ListAvailable -Name 'PnP.PowerShell')) { Install-Module PnP.PowerShell -Scope CurrentUser -Force }"
+  echo -e "${CYAN} -> Ensure Microsoft.Graph.Groups is installed ${NOFORMAT}"
+  pwsh -nop -c "if (!(Get-Module -ListAvailable -Name 'Microsoft.Graph.Groups')) { Install-Module Microsoft.Graph.Groups -Scope CurrentUser -Force }"
 fi
 
 if [ "$install_nodejs" -eq 1 ]; then
@@ -679,6 +739,32 @@ if [ "$install_rust" -eq 1 ]; then
   fi
 fi
 
+if [ "$install_teams" -eq 1 ]; then
+  echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
+  echo -e "${CYAN} -> Installing Microsoft Teams ${NOFORMAT}"
+  if command -v teams-for-linux >/dev/null 2>&1; then
+    echo -e "${GREEN}  ✅ Microsoft Teams is installed. ${NOFORMAT}"
+  else
+    echo -e "${YELLOW}  ⬇️ Microsoft Teams is not installed. ${NOFORMAT}"
+    echo "    Installing Microsoft Teams..."
+    sudo apt install -y teams-for-linux
+  fi
+fi
+
+if [ "$install_drawio" -eq 1 ]; then
+  echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
+  echo -e "${CYAN} -> Installing draw.io ${NOFORMAT}"
+  if command -v drawio >/dev/null 2>&1; then
+    echo -e "${GREEN}  ✅ draw.io is installed. ${NOFORMAT}"
+  else
+    echo -e "${YELLOW}  ⬇️ draw.io is not installed. ${NOFORMAT}"
+    echo "    Installing draw.io..."
+    wget https://github.com/jgraph/drawio-desktop/releases/download/v29.3.6/drawio-amd64-29.3.6.deb -O /tmp/drawio.deb
+    sudo apt install -y /tmp/drawio.deb
+    rm /tmp/drawio.deb
+  fi
+fi
+
 if [ "$install_qemu" -eq 1 ]; then
   echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
   echo -e "${CYAN} -> Installing QEMU ${NOFORMAT}"
@@ -707,10 +793,10 @@ fi
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Configure betterlockscreen ${NOFORMAT}"
-if [ -d ~/.cache/betterlockscreen/current ]; then
+if [ -d $HOME/.cache/betterlockscreen/current ]; then
     echo -e "${GREEN}  ✅ betterlockscreen is already configured. ${NOFORMAT}"
 else
-    betterlockscreen -u ~/.local/share/locks/astronaut.jpg
+    betterlockscreen -u $HOME/.local/share/locks/current.jpg
 fi
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
@@ -720,7 +806,7 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/alacritty
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Setting GDM Wallpaper ${NOFORMAT}"
 sudo mkdir -p /usr/share/backgrounds/gdm
-sudo cp .local/share/gdm/astronaut.jpg /usr/share/backgrounds/gdm/gdm-wallpaper
+sudo cp $HOME/.local/share/gdm/current.jpg /usr/share/backgrounds/gdm/gdm-wallpaper
 sudo machinectl shell gdm@ /bin/bash -c "gsettings set com.ubuntu.login-screen background-picture-uri 'file:///usr/share/backgrounds/gdm/gdm-wallpaper'; gsettings set com.ubuntu.login-screen background-size 'cover'"
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"

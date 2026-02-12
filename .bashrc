@@ -122,8 +122,8 @@ setup-monitors() {
   else
     xrandr --output "$primary" --auto --primary
   fi
-  feh --bg-fill ~/.local/share/backgrounds/astronaut.jpg
-  betterlockscreen -u ~/.local/share/locks/astronaut.jpg
+  feh --bg-fill $HOME/.local/share/backgrounds/current.jpg
+  betterlockscreen -u $HOME/.local/share/locks/current.jpg
 }
 
 # Add an "alert" alias for long running commands.  Use like so:

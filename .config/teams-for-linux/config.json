@@ -1,0 +1,10 @@
+
+{
+  "logConfig": "console",
+  "auth": {
+    "intune": {
+      "enabled": true,
+      "user": "pedro.augusto@nokia.com"
+    }
+  }
+}

@@ -4,10 +4,11 @@
     border-color: @background;
     bg-selected: #282c34;
     grey: #565c64;
-    spacing: 2;
+    spacing: 1;
     width: 30em;
     margin: 0;
     padding: 0;
+    font: "Nokia Pure Text Regular 12";
 }
 
 #window {
@@ -22,8 +23,8 @@
 
 #mainbox {
     background-color: @background;
-    spacing: 10px;
-    margin: 10px 0 0 0;
+    spacing: 5px;
+    margin: 5px 0 0 0;
     width: 200px;
 }
 
@@ -57,7 +58,7 @@ element-text {
 element-icon {
     background-color: inherit;
     margin: 0 4px 0 0;
-    size: 25px;
+    size: 20px;
 }
 
 #entry {
@@ -65,7 +66,7 @@ element-icon {
    text-color: @foreground;
    placeholder: "Search";
    placeholder-color: @grey;
-   font: "Sora Regular 20";
+   font: "Nokia Pure Text Regular 10";
 }
 
 #prompt {
@@ -73,5 +74,5 @@ element-icon {
    padding: 0 4px;
    margin: 0 5px 0 0;
    text-color: @foreground;
-   font: "Sora Regular 20";
+   font: "Nokia Pure Text Regular 10";
 }
