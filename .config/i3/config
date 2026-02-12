@@ -78,8 +78,9 @@ bindsym $mod+Shift+k exec --no-startup-id i3-msg -t get_config | grep -E '^[[:sp
 
 bindsym $mod+t exec --no-startup-id "teams-for-linux"
 bindsym $mod+y exec --no-startup-id "$HOME/.config/i3/webapp-launch.sh https://outlook.office.com/mail/"
-bindsym $mod+u exec --no-startup-id "microsoft-edge https://portal.azure.com/"
+bindsym $mod+u exec --no-startup-id "$HOME/.config/i3/webapp-launch.sh https://portal.azure.com/"
 bindsym $mod+i exec --no-startup-id "$HOME/.config/i3/webapp-launch.sh https://nokia.sharepoint.com/sites/Nokia_Central/"
+bindsym $mod+g exec --no-startup-id "$HOME/.config/i3/webapp-launch.sh https://engage.cloud.microsoft/main/feed"
 
 # kill focused window
 bindsym $mod+Shift+q kill
