@@ -89,7 +89,7 @@ sudo apt autoremove -y
 
 echo -e "${WHITE} --------------------------------------------------- ${NOFORMAT}"
 echo -e "${CYAN} -> Checking repositories ${NOFORMAT}"
-sudo add-apt-repository multiverse -y
+
 if ! grep -q "zhangsongcui3371/fastfetch" /etc/apt/sources.list.d/*.sources; then
   echo -e "${YELLOW}  Adding zhangsongcui3371/fastfetch repository... ${NOFORMAT}"
   sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
