@@ -52,6 +52,11 @@ PACKAGES=(
   chafa           # chafa is a command-line utility that converts images into ANSI/Unicode art for display in the terminal. It supports various image formats and provides options for customizing the output, allowing users to create visually appealing representations of images directly in the terminal.
 )
 
+if ! grep -q "zhangsongcui3371/fastfetch" /etc/apt/sources.list.d/*.sources; then
+  echo -e "${YELLOW}  Adding zhangsongcui3371/fastfetch repository... ${NOFORMAT}"
+  sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
+fi
+
 # Install terminal utilities
 log "${BLUE}Installing terminal utilities...${NOFORMAT}"
 for package in "${PACKAGES[@]}"; do
