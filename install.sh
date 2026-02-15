@@ -28,6 +28,12 @@ echo "----------------------------------------" | tee -a "$LOG_FILE"
 ./13-msedge.sh --log "$LOG_FILE"
 
 ./21-gimp.sh --log "$LOG_FILE"
+./22-filezilla.sh --log "$LOG_FILE"
+./23-vscode.sh --log "$LOG_FILE"
+./24-obs.sh --log "$LOG_FILE"
+./25-vlc.sh --log "$LOG_FILE"
+./26-cubic.sh --log "$LOG_FILE"
+./27-qemu.sh --log "$LOG_FILE"
 
 # log end of installation
 echo "----------------------------------------" | tee -a "$LOG_FILE"
