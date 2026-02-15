@@ -36,6 +36,11 @@ done
 
 if [[ "$install_cubic" -eq 1 ]]; then
 
+    if ! grep -q "cubic-wizard/release" /etc/apt/sources.list.d/*.sources; then
+        log "${YELLOW}  Adding cubic-wizard/release repository... ${NOFORMAT}"
+        sudo add-apt-repository -y ppa:cubic-wizard/release
+    fi
+
     log "${BLUE}Installing Cubic ISO customization tool...${NOFORMAT}"
     if command -v cubic > /dev/null 2>&1; then
         log "${GREEN}  ✅ Cubic ISO customization tool is already installed. ${NOFORMAT}"
