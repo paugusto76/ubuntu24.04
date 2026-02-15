@@ -1,0 +1,70 @@
+Updating apt package list...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 https://pt.archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 https://pt.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 https://pt.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Upgrading packages...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
+  vlc-plugin-qt libvlc5 libmagickcore-6.q16-7t64 libzvbi-common libglut-dev
+  vlc-data libvlccore9 vlc imagemagick vlc-bin libmagickcore-6.q16-7-extra
+  vlc-l10n libcjson1 libavdevice60 ffmpeg libpostproc57 vlc-plugin-samba
+  python3-fonttools libavcodec60 libgstreamer-plugins-bad1.0-0 libzvbi0t64
+  vlc-plugin-notify libavutil58 imagemagick-6.q16 libswscale7
+  vlc-plugin-access-extra vlc-plugin-skins2 vlc-plugin-video-splitter
+  libswresample4 imagemagick-6-common vlc-plugin-video-output libbotan-2-19
+  7zip libavformat60 libglut3.12 libvlc-bin vlc-plugin-base
+  vlc-plugin-visualization libavfilter9 libmagickwand-6.q16-7t64
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Apt update and upgrade completed.
+Installing basic packages...
+ ✅ curl is already installed.
+ ✅ wget is already installed.
+ ✅ git is already installed.
+ ✅ build-essential is already installed.
+ ✅ nano is already installed.
+ ✅ unzip is already installed.
+ ✅ man-db is already installed.
+ ✅ gpg is already installed.
+ ✅ apt-transport-https is already installed.
+ ✅ software-properties-common is already installed.
+Basic packages installation completed.
+Installing basic packages...
+ ✅ curl is already installed.
+ ✅ wget is already installed.
+ ✅ git is already installed.
+ ✅ build-essential is already installed.
+ ✅ nano is already installed.
+ ✅ unzip is already installed.
+ ✅ man-db is already installed.
+ ✅ gpg is already installed.
+ ✅ apt-transport-https is already installed.
+ ✅ software-properties-common is already installed.
+Basic packages installation completed.
+Installing basic packages...
+ ✅ curl is already installed.
+ ✅ wget is already installed.
+ ✅ git is already installed.
+ ✅ build-essential is already installed.
+ ✅ nano is already installed.
+ ✅ unzip is already installed.
+ ✅ man-db is already installed.
+ ✅ gpg is already installed.
+ ✅ apt-transport-https is already installed.
+ ✅ software-properties-common is already installed.
+ ⬇️ Installing whois...
+Basic packages installation completed.

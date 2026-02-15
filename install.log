@@ -1,0 +1,577 @@
+Installation started at Sun Feb 15 09:35:37 PM WET 2026
+----------------------------------------
+Updating apt package list...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:5 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:2 https://pt.archive.ubuntu.com/ubuntu noble InRelease
+Hit:4 https://pt.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:6 https://pt.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Upgrading packages...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
+  vlc-plugin-qt libvlc5 libmagickcore-6.q16-7t64 libzvbi-common libglut-dev
+  vlc-data libvlccore9 vlc imagemagick vlc-bin libmagickcore-6.q16-7-extra
+  vlc-l10n libcjson1 libavdevice60 ffmpeg libpostproc57 vlc-plugin-samba
+  python3-fonttools libavcodec60 libgstreamer-plugins-bad1.0-0 libzvbi0t64
+  vlc-plugin-notify libavutil58 imagemagick-6.q16 libswscale7
+  vlc-plugin-access-extra vlc-plugin-skins2 vlc-plugin-video-splitter
+  libswresample4 imagemagick-6-common vlc-plugin-video-output libbotan-2-19
+  7zip libavformat60 libglut3.12 libvlc-bin vlc-plugin-base
+  vlc-plugin-visualization libavfilter9 libmagickwand-6.q16-7t64
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Autoremoving packages...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Apt update and upgrade completed.
+Installing basic packages...
+ ✅ curl is already installed.
+ ✅ wget is already installed.
+ ✅ git is already installed.
+ ✅ build-essential is already installed.
+ ✅ nano is already installed.
+ ✅ unzip is already installed.
+ ✅ man-db is already installed.
+ ✅ gpg is already installed.
+ ✅ apt-transport-https is already installed.
+ ✅ software-properties-common is already installed.
+ ✅ whois is already installed.
+ ✅ ca-certificates is already installed.
+Basic packages installation completed.
+Installing drivers...
+  ✅ Driver installed. 
+Drivers installation completed.
+Installing terminal utilities...
+ ✅ alacritty is already installed.
+ ✅ htop is already installed.
+ ✅ btop is already installed.
+ ✅ ranger is already installed.
+ ✅ fastfetch is already installed.
+ ✅ bat is already installed.
+ ✅ ncal is already installed.
+ ✅ fortune-mod is already installed.
+ ✅ cowsay is already installed.
+ ✅ lolcat is already installed.
+ ✅ mpg123 is already installed.
+ ✅ ffmpeg is already installed.
+ ✅ ncdu is already installed.
+ ✅ jq is already installed.
+ ✅ chafa is already installed.
+Terminal utilities installation completed.
+Installing X Window System and related utilities...
+ ✅ xorg is already installed.
+ ✅ xserver-xorg is already installed.
+ ✅ x11-utils is already installed.
+ ✅ feh is already installed.
+ ✅ picom is already installed.
+ ✅ imagemagick is already installed.
+ ✅ xdg-utils is already installed.
+ ✅ scrot is already installed.
+ ✅ playerctl is already installed.
+ ✅ gdm-settings is already installed.
+ ✅ filezilla is already installed.
+ ✅ keepassxc is already installed.
+ ✅ cubic is already installed.
+X Window System and related utilities installation completed.
+Installing fonts and related utilities...
+ ✅ fonts-noto-cjk is already installed.
+ ✅ fonts-noto-color-emoji is already installed.
+ ✅ fonts-noto-core is already installed.
+ ✅ fonts-noto-mono is already installed.
+ ✅ fonts-dejavu-core is already installed.
+ ✅ fonts-dejavu-mono is already installed.
+ ✅ fonts-liberation is already installed.
+ ✅ fonts-liberation-sans-narrow is already installed.
+ ✅ fonts-font-awesome is already installed.
+ ✅ fonts-droid-fallback is already installed.
+'.local/share/fonts/arial.ttf' -> '/home/augusto/.local/share/fonts/arial.ttf'
+'.local/share/fonts/arialbd.ttf' -> '/home/augusto/.local/share/fonts/arialbd.ttf'
+'.local/share/fonts/arialbi.ttf' -> '/home/augusto/.local/share/fonts/arialbi.ttf'
+'.local/share/fonts/ariali.ttf' -> '/home/augusto/.local/share/fonts/ariali.ttf'
+'.local/share/fonts/ariblk.ttf' -> '/home/augusto/.local/share/fonts/ariblk.ttf'
+'.local/share/fonts/bahnschrift.ttf' -> '/home/augusto/.local/share/fonts/bahnschrift.ttf'
+'.local/share/fonts/calibri.ttf' -> '/home/augusto/.local/share/fonts/calibri.ttf'
+'.local/share/fonts/calibrib.ttf' -> '/home/augusto/.local/share/fonts/calibrib.ttf'
+'.local/share/fonts/calibrii.ttf' -> '/home/augusto/.local/share/fonts/calibrii.ttf'
+'.local/share/fonts/calibril.ttf' -> '/home/augusto/.local/share/fonts/calibril.ttf'
+'.local/share/fonts/calibrili.ttf' -> '/home/augusto/.local/share/fonts/calibrili.ttf'
+'.local/share/fonts/calibriz.ttf' -> '/home/augusto/.local/share/fonts/calibriz.ttf'
+'.local/share/fonts/cambria.ttc' -> '/home/augusto/.local/share/fonts/cambria.ttc'
+'.local/share/fonts/cambriab.ttf' -> '/home/augusto/.local/share/fonts/cambriab.ttf'
+'.local/share/fonts/cambriai.ttf' -> '/home/augusto/.local/share/fonts/cambriai.ttf'
+'.local/share/fonts/cambriaz.ttf' -> '/home/augusto/.local/share/fonts/cambriaz.ttf'
+'.local/share/fonts/Candara.ttf' -> '/home/augusto/.local/share/fonts/Candara.ttf'
+'.local/share/fonts/Candarab.ttf' -> '/home/augusto/.local/share/fonts/Candarab.ttf'
+'.local/share/fonts/Candarai.ttf' -> '/home/augusto/.local/share/fonts/Candarai.ttf'
+'.local/share/fonts/Candaral.ttf' -> '/home/augusto/.local/share/fonts/Candaral.ttf'
+'.local/share/fonts/Candarali.ttf' -> '/home/augusto/.local/share/fonts/Candarali.ttf'
+'.local/share/fonts/Candaraz.ttf' -> '/home/augusto/.local/share/fonts/Candaraz.ttf'
+'.local/share/fonts/CascadiaCodeItalic.ttf' -> '/home/augusto/.local/share/fonts/CascadiaCodeItalic.ttf'
+'.local/share/fonts/CascadiaMonoItalic.ttf' -> '/home/augusto/.local/share/fonts/CascadiaMonoItalic.ttf'
+'.local/share/fonts/comic.ttf' -> '/home/augusto/.local/share/fonts/comic.ttf'
+'.local/share/fonts/comicbd.ttf' -> '/home/augusto/.local/share/fonts/comicbd.ttf'
+'.local/share/fonts/comici.ttf' -> '/home/augusto/.local/share/fonts/comici.ttf'
+'.local/share/fonts/comicz.ttf' -> '/home/augusto/.local/share/fonts/comicz.ttf'
+'.local/share/fonts/consola.ttf' -> '/home/augusto/.local/share/fonts/consola.ttf'
+'.local/share/fonts/consolab.ttf' -> '/home/augusto/.local/share/fonts/consolab.ttf'
+'.local/share/fonts/consolai.ttf' -> '/home/augusto/.local/share/fonts/consolai.ttf'
+'.local/share/fonts/consolaz.ttf' -> '/home/augusto/.local/share/fonts/consolaz.ttf'
+'.local/share/fonts/constan.ttf' -> '/home/augusto/.local/share/fonts/constan.ttf'
+'.local/share/fonts/constanb.ttf' -> '/home/augusto/.local/share/fonts/constanb.ttf'
+'.local/share/fonts/constani.ttf' -> '/home/augusto/.local/share/fonts/constani.ttf'
+'.local/share/fonts/constanz.ttf' -> '/home/augusto/.local/share/fonts/constanz.ttf'
+'.local/share/fonts/corbel.ttf' -> '/home/augusto/.local/share/fonts/corbel.ttf'
+'.local/share/fonts/corbelb.ttf' -> '/home/augusto/.local/share/fonts/corbelb.ttf'
+'.local/share/fonts/corbeli.ttf' -> '/home/augusto/.local/share/fonts/corbeli.ttf'
+'.local/share/fonts/corbell.ttf' -> '/home/augusto/.local/share/fonts/corbell.ttf'
+'.local/share/fonts/corbelli.ttf' -> '/home/augusto/.local/share/fonts/corbelli.ttf'
+'.local/share/fonts/corbelz.ttf' -> '/home/augusto/.local/share/fonts/corbelz.ttf'
+'.local/share/fonts/cour.ttf' -> '/home/augusto/.local/share/fonts/cour.ttf'
+'.local/share/fonts/courbd.ttf' -> '/home/augusto/.local/share/fonts/courbd.ttf'
+'.local/share/fonts/courbi.ttf' -> '/home/augusto/.local/share/fonts/courbi.ttf'
+'.local/share/fonts/couri.ttf' -> '/home/augusto/.local/share/fonts/couri.ttf'
+'.local/share/fonts/desktop.ini' -> '/home/augusto/.local/share/fonts/desktop.ini'
+'.local/share/fonts/ebrima.ttf' -> '/home/augusto/.local/share/fonts/ebrima.ttf'
+'.local/share/fonts/ebrimabd.ttf' -> '/home/augusto/.local/share/fonts/ebrimabd.ttf'
+'.local/share/fonts/framd.ttf' -> '/home/augusto/.local/share/fonts/framd.ttf'
+'.local/share/fonts/framdit.ttf' -> '/home/augusto/.local/share/fonts/framdit.ttf'
+'.local/share/fonts/Gabriola.ttf' -> '/home/augusto/.local/share/fonts/Gabriola.ttf'
+'.local/share/fonts/gadugi.ttf' -> '/home/augusto/.local/share/fonts/gadugi.ttf'
+'.local/share/fonts/gadugib.ttf' -> '/home/augusto/.local/share/fonts/gadugib.ttf'
+'.local/share/fonts/georgia.ttf' -> '/home/augusto/.local/share/fonts/georgia.ttf'
+'.local/share/fonts/georgiab.ttf' -> '/home/augusto/.local/share/fonts/georgiab.ttf'
+'.local/share/fonts/georgiai.ttf' -> '/home/augusto/.local/share/fonts/georgiai.ttf'
+'.local/share/fonts/georgiaz.ttf' -> '/home/augusto/.local/share/fonts/georgiaz.ttf'
+'.local/share/fonts/GlobalMonospace.CompositeFont' -> '/home/augusto/.local/share/fonts/GlobalMonospace.CompositeFont'
+'.local/share/fonts/GlobalSansSerif.CompositeFont' -> '/home/augusto/.local/share/fonts/GlobalSansSerif.CompositeFont'
+'.local/share/fonts/GlobalSerif.CompositeFont' -> '/home/augusto/.local/share/fonts/GlobalSerif.CompositeFont'
+'.local/share/fonts/GlobalUserInterface.CompositeFont' -> '/home/augusto/.local/share/fonts/GlobalUserInterface.CompositeFont'
+'.local/share/fonts/himalaya.ttf' -> '/home/augusto/.local/share/fonts/himalaya.ttf'
+'.local/share/fonts/impact.ttf' -> '/home/augusto/.local/share/fonts/impact.ttf'
+'.local/share/fonts/Inkfree.ttf' -> '/home/augusto/.local/share/fonts/Inkfree.ttf'
+'.local/share/fonts/javatext.ttf' -> '/home/augusto/.local/share/fonts/javatext.ttf'
+'.local/share/fonts/l_10646.ttf' -> '/home/augusto/.local/share/fonts/l_10646.ttf'
+'.local/share/fonts/LeelaUIb.ttf' -> '/home/augusto/.local/share/fonts/LeelaUIb.ttf'
+'.local/share/fonts/LeelawUI.ttf' -> '/home/augusto/.local/share/fonts/LeelawUI.ttf'
+'.local/share/fonts/LeelUIsl.ttf' -> '/home/augusto/.local/share/fonts/LeelUIsl.ttf'
+'.local/share/fonts/lucon.ttf' -> '/home/augusto/.local/share/fonts/lucon.ttf'
+'.local/share/fonts/malgun.ttf' -> '/home/augusto/.local/share/fonts/malgun.ttf'
+'.local/share/fonts/malgunbd.ttf' -> '/home/augusto/.local/share/fonts/malgunbd.ttf'
+'.local/share/fonts/malgunsl.ttf' -> '/home/augusto/.local/share/fonts/malgunsl.ttf'
+'.local/share/fonts/marlett.ttf' -> '/home/augusto/.local/share/fonts/marlett.ttf'
+'.local/share/fonts/micross.ttf' -> '/home/augusto/.local/share/fonts/micross.ttf'
+'.local/share/fonts/mingliub.ttc' -> '/home/augusto/.local/share/fonts/mingliub.ttc'
+'.local/share/fonts/mmrtext.ttf' -> '/home/augusto/.local/share/fonts/mmrtext.ttf'
+'.local/share/fonts/mmrtextb.ttf' -> '/home/augusto/.local/share/fonts/mmrtextb.ttf'
+'.local/share/fonts/monbaiti.ttf' -> '/home/augusto/.local/share/fonts/monbaiti.ttf'
+'.local/share/fonts/msgothic.ttc' -> '/home/augusto/.local/share/fonts/msgothic.ttc'
+'.local/share/fonts/msjh.ttc' -> '/home/augusto/.local/share/fonts/msjh.ttc'
+'.local/share/fonts/msjhbd.ttc' -> '/home/augusto/.local/share/fonts/msjhbd.ttc'
+'.local/share/fonts/msjhl.ttc' -> '/home/augusto/.local/share/fonts/msjhl.ttc'
+'.local/share/fonts/msyh.ttc' -> '/home/augusto/.local/share/fonts/msyh.ttc'
+'.local/share/fonts/msyhbd.ttc' -> '/home/augusto/.local/share/fonts/msyhbd.ttc'
+'.local/share/fonts/msyhl.ttc' -> '/home/augusto/.local/share/fonts/msyhl.ttc'
+'.local/share/fonts/msyi.ttf' -> '/home/augusto/.local/share/fonts/msyi.ttf'
+'.local/share/fonts/mvboli.ttf' -> '/home/augusto/.local/share/fonts/mvboli.ttf'
+'.local/share/fonts/Nirmala.ttc' -> '/home/augusto/.local/share/fonts/Nirmala.ttc'
+'.local/share/fonts/NokiaPureHeadline_Bold.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Bold.ttf'
+'.local/share/fonts/NokiaPureHeadline_ExtraBold.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_ExtraBold.ttf'
+'.local/share/fonts/NokiaPureHeadline_Light.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Light.ttf'
+'.local/share/fonts/NokiaPureHeadline_Regular.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Regular.ttf'
+'.local/share/fonts/NokiaPureHeadline_Ultralight.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Ultralight.ttf'
+'.local/share/fonts/NokiaPureSymbols.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureSymbols.ttf'
+'.local/share/fonts/NokiaPureText-Bold.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText-Bold.ttf'
+'.local/share/fonts/NokiaPureText-Light.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText-Light.ttf'
+'.local/share/fonts/NokiaPureText-Medium.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText-Medium.ttf'
+'.local/share/fonts/NokiaPureText-Regular.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText-Regular.ttf'
+'.local/share/fonts/ntailu.ttf' -> '/home/augusto/.local/share/fonts/ntailu.ttf'
+'.local/share/fonts/ntailub.ttf' -> '/home/augusto/.local/share/fonts/ntailub.ttf'
+'.local/share/fonts/pala.ttf' -> '/home/augusto/.local/share/fonts/pala.ttf'
+'.local/share/fonts/palab.ttf' -> '/home/augusto/.local/share/fonts/palab.ttf'
+'.local/share/fonts/palabi.ttf' -> '/home/augusto/.local/share/fonts/palabi.ttf'
+'.local/share/fonts/palai.ttf' -> '/home/augusto/.local/share/fonts/palai.ttf'
+'.local/share/fonts/phagspa.ttf' -> '/home/augusto/.local/share/fonts/phagspa.ttf'
+'.local/share/fonts/phagspab.ttf' -> '/home/augusto/.local/share/fonts/phagspab.ttf'
+'.local/share/fonts/SansSerifCollection.ttf' -> '/home/augusto/.local/share/fonts/SansSerifCollection.ttf'
+'.local/share/fonts/segmdl2.ttf' -> '/home/augusto/.local/share/fonts/segmdl2.ttf'
+'.local/share/fonts/SegoeIcons.ttf' -> '/home/augusto/.local/share/fonts/SegoeIcons.ttf'
+'.local/share/fonts/segoepr.ttf' -> '/home/augusto/.local/share/fonts/segoepr.ttf'
+'.local/share/fonts/segoeprb.ttf' -> '/home/augusto/.local/share/fonts/segoeprb.ttf'
+'.local/share/fonts/segoesc.ttf' -> '/home/augusto/.local/share/fonts/segoesc.ttf'
+'.local/share/fonts/segoescb.ttf' -> '/home/augusto/.local/share/fonts/segoescb.ttf'
+'.local/share/fonts/segoeui.ttf' -> '/home/augusto/.local/share/fonts/segoeui.ttf'
+'.local/share/fonts/segoeuib.ttf' -> '/home/augusto/.local/share/fonts/segoeuib.ttf'
+'.local/share/fonts/segoeuii.ttf' -> '/home/augusto/.local/share/fonts/segoeuii.ttf'
+'.local/share/fonts/segoeuil.ttf' -> '/home/augusto/.local/share/fonts/segoeuil.ttf'
+'.local/share/fonts/segoeuisl.ttf' -> '/home/augusto/.local/share/fonts/segoeuisl.ttf'
+'.local/share/fonts/segoeuiz.ttf' -> '/home/augusto/.local/share/fonts/segoeuiz.ttf'
+'.local/share/fonts/seguibl.ttf' -> '/home/augusto/.local/share/fonts/seguibl.ttf'
+'.local/share/fonts/seguibli.ttf' -> '/home/augusto/.local/share/fonts/seguibli.ttf'
+'.local/share/fonts/seguiemj.ttf' -> '/home/augusto/.local/share/fonts/seguiemj.ttf'
+'.local/share/fonts/seguihis.ttf' -> '/home/augusto/.local/share/fonts/seguihis.ttf'
+'.local/share/fonts/seguili.ttf' -> '/home/augusto/.local/share/fonts/seguili.ttf'
+'.local/share/fonts/seguisb.ttf' -> '/home/augusto/.local/share/fonts/seguisb.ttf'
+'.local/share/fonts/seguisbi.ttf' -> '/home/augusto/.local/share/fonts/seguisbi.ttf'
+'.local/share/fonts/seguisli.ttf' -> '/home/augusto/.local/share/fonts/seguisli.ttf'
+'.local/share/fonts/seguisym.ttf' -> '/home/augusto/.local/share/fonts/seguisym.ttf'
+'.local/share/fonts/SegUIVar.ttf' -> '/home/augusto/.local/share/fonts/SegUIVar.ttf'
+'.local/share/fonts/simsun.ttc' -> '/home/augusto/.local/share/fonts/simsun.ttc'
+'.local/share/fonts/simsunb.ttf' -> '/home/augusto/.local/share/fonts/simsunb.ttf'
+'.local/share/fonts/SimsunExtG.ttf' -> '/home/augusto/.local/share/fonts/SimsunExtG.ttf'
+'.local/share/fonts/SitkaVF-Italic.ttf' -> '/home/augusto/.local/share/fonts/SitkaVF-Italic.ttf'
+'.local/share/fonts/SitkaVF.ttf' -> '/home/augusto/.local/share/fonts/SitkaVF.ttf'
+'.local/share/fonts/sylfaen.ttf' -> '/home/augusto/.local/share/fonts/sylfaen.ttf'
+'.local/share/fonts/symbol.ttf' -> '/home/augusto/.local/share/fonts/symbol.ttf'
+'.local/share/fonts/tahoma.ttf' -> '/home/augusto/.local/share/fonts/tahoma.ttf'
+'.local/share/fonts/tahomabd.ttf' -> '/home/augusto/.local/share/fonts/tahomabd.ttf'
+'.local/share/fonts/taile.ttf' -> '/home/augusto/.local/share/fonts/taile.ttf'
+'.local/share/fonts/taileb.ttf' -> '/home/augusto/.local/share/fonts/taileb.ttf'
+'.local/share/fonts/times.ttf' -> '/home/augusto/.local/share/fonts/times.ttf'
+'.local/share/fonts/timesbd.ttf' -> '/home/augusto/.local/share/fonts/timesbd.ttf'
+'.local/share/fonts/timesbi.ttf' -> '/home/augusto/.local/share/fonts/timesbi.ttf'
+'.local/share/fonts/timesi.ttf' -> '/home/augusto/.local/share/fonts/timesi.ttf'
+'.local/share/fonts/trebuc.ttf' -> '/home/augusto/.local/share/fonts/trebuc.ttf'
+'.local/share/fonts/trebucbd.ttf' -> '/home/augusto/.local/share/fonts/trebucbd.ttf'
+'.local/share/fonts/trebucbi.ttf' -> '/home/augusto/.local/share/fonts/trebucbi.ttf'
+'.local/share/fonts/trebucit.ttf' -> '/home/augusto/.local/share/fonts/trebucit.ttf'
+'.local/share/fonts/verdana.ttf' -> '/home/augusto/.local/share/fonts/verdana.ttf'
+'.local/share/fonts/verdanab.ttf' -> '/home/augusto/.local/share/fonts/verdanab.ttf'
+'.local/share/fonts/verdanai.ttf' -> '/home/augusto/.local/share/fonts/verdanai.ttf'
+'.local/share/fonts/verdanaz.ttf' -> '/home/augusto/.local/share/fonts/verdanaz.ttf'
+'.local/share/fonts/webdings.ttf' -> '/home/augusto/.local/share/fonts/webdings.ttf'
+'.local/share/fonts/wingding.ttf' -> '/home/augusto/.local/share/fonts/wingding.ttf'
+'.local/share/fonts/YuGothB.ttc' -> '/home/augusto/.local/share/fonts/YuGothB.ttc'
+'.local/share/fonts/YuGothL.ttc' -> '/home/augusto/.local/share/fonts/YuGothL.ttc'
+'.local/share/fonts/YuGothM.ttc' -> '/home/augusto/.local/share/fonts/YuGothM.ttc'
+'.local/share/fonts/YuGothR.ttc' -> '/home/augusto/.local/share/fonts/YuGothR.ttc'
+'.local/share/fonts/CascadiaCode.ttf' -> '/home/augusto/.local/share/fonts/CascadiaCode.ttf'
+'.local/share/fonts/CascadiaCodeNF.ttf' -> '/home/augusto/.local/share/fonts/CascadiaCodeNF.ttf'
+'.local/share/fonts/CascadiaCodeNFItalic.ttf' -> '/home/augusto/.local/share/fonts/CascadiaCodeNFItalic.ttf'
+'.local/share/fonts/CascadiaCodePL.ttf' -> '/home/augusto/.local/share/fonts/CascadiaCodePL.ttf'
+'.local/share/fonts/CascadiaCodePLItalic.ttf' -> '/home/augusto/.local/share/fonts/CascadiaCodePLItalic.ttf'
+'.local/share/fonts/CascadiaMono.ttf' -> '/home/augusto/.local/share/fonts/CascadiaMono.ttf'
+'.local/share/fonts/CascadiaMonoNF.ttf' -> '/home/augusto/.local/share/fonts/CascadiaMonoNF.ttf'
+'.local/share/fonts/CascadiaMonoNFItalic.ttf' -> '/home/augusto/.local/share/fonts/CascadiaMonoNFItalic.ttf'
+'.local/share/fonts/CascadiaMonoPL.ttf' -> '/home/augusto/.local/share/fonts/CascadiaMonoPL.ttf'
+'.local/share/fonts/CascadiaMonoPLItalic.ttf' -> '/home/augusto/.local/share/fonts/CascadiaMonoPLItalic.ttf'
+'.local/share/fonts/FiraCode-Bold.ttf' -> '/home/augusto/.local/share/fonts/FiraCode-Bold.ttf'
+'.local/share/fonts/FiraCode-Light.ttf' -> '/home/augusto/.local/share/fonts/FiraCode-Light.ttf'
+'.local/share/fonts/FiraCode-Medium.ttf' -> '/home/augusto/.local/share/fonts/FiraCode-Medium.ttf'
+'.local/share/fonts/FiraCode-Regular.ttf' -> '/home/augusto/.local/share/fonts/FiraCode-Regular.ttf'
+'.local/share/fonts/FiraCode-Retina.ttf' -> '/home/augusto/.local/share/fonts/FiraCode-Retina.ttf'
+'.local/share/fonts/FiraCode-SemiBold.ttf' -> '/home/augusto/.local/share/fonts/FiraCode-SemiBold.ttf'
+'.local/share/fonts/Hack-Bold.ttf' -> '/home/augusto/.local/share/fonts/Hack-Bold.ttf'
+'.local/share/fonts/Hack-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Hack-BoldItalic.ttf'
+'.local/share/fonts/Hack-Italic.ttf' -> '/home/augusto/.local/share/fonts/Hack-Italic.ttf'
+'.local/share/fonts/HackNerdFont-Bold.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFont-Bold.ttf'
+'.local/share/fonts/HackNerdFont-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFont-BoldItalic.ttf'
+'.local/share/fonts/HackNerdFont-Italic.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFont-Italic.ttf'
+'.local/share/fonts/HackNerdFontMono-Bold.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontMono-Bold.ttf'
+'.local/share/fonts/HackNerdFontMono-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontMono-BoldItalic.ttf'
+'.local/share/fonts/HackNerdFontMono-Italic.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontMono-Italic.ttf'
+'.local/share/fonts/HackNerdFontMono-Regular.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontMono-Regular.ttf'
+'.local/share/fonts/HackNerdFontPropo-Bold.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontPropo-Bold.ttf'
+'.local/share/fonts/HackNerdFontPropo-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontPropo-BoldItalic.ttf'
+'.local/share/fonts/HackNerdFontPropo-Italic.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontPropo-Italic.ttf'
+'.local/share/fonts/HackNerdFontPropo-Regular.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFontPropo-Regular.ttf'
+'.local/share/fonts/HackNerdFont-Regular.ttf' -> '/home/augusto/.local/share/fonts/HackNerdFont-Regular.ttf'
+'.local/share/fonts/Hack-Regular.ttf' -> '/home/augusto/.local/share/fonts/Hack-Regular.ttf'
+'.local/share/fonts/Inconsolata-VariableFont_wdth,wght.ttf' -> '/home/augusto/.local/share/fonts/Inconsolata-VariableFont_wdth,wght.ttf'
+'.local/share/fonts/JetBrainsMono-Bold.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-Bold.ttf'
+'.local/share/fonts/JetBrainsMono-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-BoldItalic.ttf'
+'.local/share/fonts/JetBrainsMono-ExtraBold.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-ExtraBold.ttf'
+'.local/share/fonts/JetBrainsMono-ExtraBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-ExtraBoldItalic.ttf'
+'.local/share/fonts/JetBrainsMono-ExtraLight.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-ExtraLight.ttf'
+'.local/share/fonts/JetBrainsMono-ExtraLightItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-ExtraLightItalic.ttf'
+'.local/share/fonts/JetBrainsMono-Italic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-Italic.ttf'
+'.local/share/fonts/JetBrainsMono-Light.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-Light.ttf'
+'.local/share/fonts/JetBrainsMono-LightItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-LightItalic.ttf'
+'.local/share/fonts/JetBrainsMono-Medium.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-Medium.ttf'
+'.local/share/fonts/JetBrainsMono-MediumItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-MediumItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-Bold.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-Bold.ttf'
+'.local/share/fonts/JetBrainsMonoNL-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-BoldItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-ExtraBold.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-ExtraBold.ttf'
+'.local/share/fonts/JetBrainsMonoNL-ExtraBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-ExtraBoldItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-ExtraLight.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-ExtraLight.ttf'
+'.local/share/fonts/JetBrainsMonoNL-ExtraLightItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-ExtraLightItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-Italic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-Italic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-Light.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-Light.ttf'
+'.local/share/fonts/JetBrainsMonoNL-LightItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-LightItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-Medium.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-Medium.ttf'
+'.local/share/fonts/JetBrainsMonoNL-MediumItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-MediumItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-Regular.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-Regular.ttf'
+'.local/share/fonts/JetBrainsMonoNL-SemiBold.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-SemiBold.ttf'
+'.local/share/fonts/JetBrainsMonoNL-SemiBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-SemiBoldItalic.ttf'
+'.local/share/fonts/JetBrainsMonoNL-Thin.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-Thin.ttf'
+'.local/share/fonts/JetBrainsMonoNL-ThinItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMonoNL-ThinItalic.ttf'
+'.local/share/fonts/JetBrainsMono-Regular.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-Regular.ttf'
+'.local/share/fonts/JetBrainsMono-SemiBold.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-SemiBold.ttf'
+'.local/share/fonts/JetBrainsMono-SemiBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-SemiBoldItalic.ttf'
+'.local/share/fonts/JetBrainsMono-Thin.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-Thin.ttf'
+'.local/share/fonts/JetBrainsMono-ThinItalic.ttf' -> '/home/augusto/.local/share/fonts/JetBrainsMono-ThinItalic.ttf'
+'.local/share/fonts/NokiaPureS40LATN_Bd.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureS40LATN_Bd.ttf'
+'.local/share/fonts/NokiaPureS40LATN_Lt.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureS40LATN_Lt.ttf'
+'.local/share/fonts/NokiaPureS40LATN_Rg.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureS40LATN_Rg.ttf'
+'.local/share/fonts/NokiaPureText_Bd.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText_Bd.ttf'
+'.local/share/fonts/NokiaPureText_Lt.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText_Lt.ttf'
+'.local/share/fonts/NokiaPureText_Md.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText_Md.ttf'
+'.local/share/fonts/NokiaPureText_Rg.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureText_Rg.ttf'
+'.local/share/fonts/unifont-17.0.03.otf' -> '/home/augusto/.local/share/fonts/unifont-17.0.03.otf'
+'.local/share/fonts/NokiaPureHeadline_Bd.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Bd.ttf'
+'.local/share/fonts/NokiaPureHeadline_Lt.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Lt.ttf'
+'.local/share/fonts/NokiaPureHeadline_Rg.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_Rg.ttf'
+'.local/share/fonts/NokiaPureHeadline_ULt.ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_ULt.ttf'
+'.local/share/fonts/NokiaPureHeadline_XBd..ttf' -> '/home/augusto/.local/share/fonts/NokiaPureHeadline_XBd..ttf'
+'.local/share/fonts/Roboto-VariableFont_wdth,wght.ttf' -> '/home/augusto/.local/share/fonts/Roboto-VariableFont_wdth,wght.ttf'
+'.local/share/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf'
+'.local/share/fonts/Roboto_Condensed-ExtraLight.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-ExtraLight.ttf'
+'.local/share/fonts/Roboto_Condensed-Thin.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Thin.ttf'
+'.local/share/fonts/Roboto_Condensed-Regular.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Regular.ttf'
+'.local/share/fonts/Roboto_Condensed-Light.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Light.ttf'
+'.local/share/fonts/Roboto_Condensed-Bold.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Bold.ttf'
+'.local/share/fonts/Roboto_Condensed-SemiBold.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-SemiBold.ttf'
+'.local/share/fonts/Roboto_Condensed-ExtraBold.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-ExtraBold.ttf'
+'.local/share/fonts/Roboto_Condensed-Black.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Black.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Black.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Black.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-ExtraBold.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-ExtraBold.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-ExtraLight.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-ExtraLight.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Thin.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Thin.ttf'
+'.local/share/fonts/Roboto-Thin.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Thin.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Bold.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Bold.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Medium.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Medium.ttf'
+'.local/share/fonts/Roboto_Condensed-Medium.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Medium.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Light.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Light.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-SemiBold.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-SemiBold.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Regular.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Regular.ttf'
+'.local/share/fonts/Roboto-Light.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Light.ttf'
+'.local/share/fonts/Roboto-ExtraLight.ttf' -> '/home/augusto/.local/share/fonts/Roboto-ExtraLight.ttf'
+'.local/share/fonts/Roboto-Medium.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Medium.ttf'
+'.local/share/fonts/Roboto_Condensed-ThinItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-ThinItalic.ttf'
+'.local/share/fonts/Roboto-ExtraBold.ttf' -> '/home/augusto/.local/share/fonts/Roboto-ExtraBold.ttf'
+'.local/share/fonts/Roboto-SemiBold.ttf' -> '/home/augusto/.local/share/fonts/Roboto-SemiBold.ttf'
+'.local/share/fonts/Roboto-Bold.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Bold.ttf'
+'.local/share/fonts/Roboto-Regular.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Regular.ttf'
+'.local/share/fonts/Roboto_Condensed-ExtraLightItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-ExtraLightItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-SemiBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-SemiBoldItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-BlackItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-BlackItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-ExtraBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-ExtraBoldItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-Italic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-Italic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-MediumItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-MediumItalic.ttf'
+'.local/share/fonts/Roboto_Condensed-LightItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-LightItalic.ttf'
+'.local/share/fonts/Roboto_Condensed-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-BoldItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-ExtraLightItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-ExtraLightItalic.ttf'
+'.local/share/fonts/Roboto_Condensed-Italic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-Italic.ttf'
+'.local/share/fonts/Roboto_Condensed-MediumItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-MediumItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-ThinItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-ThinItalic.ttf'
+'.local/share/fonts/Roboto-ThinItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-ThinItalic.ttf'
+'.local/share/fonts/Roboto_Condensed-ExtraBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-ExtraBoldItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-BoldItalic.ttf'
+'.local/share/fonts/Roboto_SemiCondensed-LightItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_SemiCondensed-LightItalic.ttf'
+'.local/share/fonts/Roboto_Condensed-SemiBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-SemiBoldItalic.ttf'
+'.local/share/fonts/Roboto-ExtraBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-ExtraBoldItalic.ttf'
+'.local/share/fonts/Roboto_Condensed-BlackItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto_Condensed-BlackItalic.ttf'
+'.local/share/fonts/Roboto-Italic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Italic.ttf'
+'.local/share/fonts/Roboto-BlackItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-BlackItalic.ttf'
+'.local/share/fonts/Roboto-BoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-BoldItalic.ttf'
+'.local/share/fonts/Roboto-MediumItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-MediumItalic.ttf'
+'.local/share/fonts/Roboto-LightItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-LightItalic.ttf'
+'.local/share/fonts/Roboto-SemiBoldItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-SemiBoldItalic.ttf'
+'.local/share/fonts/Roboto-ExtraLightItalic.ttf' -> '/home/augusto/.local/share/fonts/Roboto-ExtraLightItalic.ttf'
+'.local/share/fonts/Roboto-Black.ttf' -> '/home/augusto/.local/share/fonts/Roboto-Black.ttf'
+Font directories:
+	/home/augusto/.local/share/fonts
+	/usr/share/i3/fonts
+	/usr/share/gnome/fonts
+	/usr/local/share/fonts
+	/usr/share/fonts
+	/var/lib/snapd/desktop/fonts
+	/home/augusto/.fonts
+	/usr/share/fonts/X11
+	/usr/share/fonts/cMap
+	/usr/share/fonts/cmap
+	/usr/share/fonts/opentype
+	/usr/share/fonts/truetype
+	/usr/share/fonts/type1
+	/usr/share/fonts/X11/Type1
+	/usr/share/fonts/X11/encodings
+	/usr/share/fonts/X11/misc
+	/usr/share/fonts/X11/util
+	/usr/share/fonts/cmap/adobe-cns1
+	/usr/share/fonts/cmap/adobe-gb1
+	/usr/share/fonts/cmap/adobe-japan1
+	/usr/share/fonts/cmap/adobe-japan2
+	/usr/share/fonts/cmap/adobe-korea1
+	/usr/share/fonts/opentype/font-awesome
+	/usr/share/fonts/opentype/linux-libertine
+	/usr/share/fonts/opentype/noto
+	/usr/share/fonts/opentype/urw-base35
+	/usr/share/fonts/truetype/crosextra
+	/usr/share/fonts/truetype/dejavu
+	/usr/share/fonts/truetype/droid
+	/usr/share/fonts/truetype/font-awesome
+	/usr/share/fonts/truetype/freefont
+	/usr/share/fonts/truetype/gentium
+	/usr/share/fonts/truetype/gentium-basic
+	/usr/share/fonts/truetype/lato
+	/usr/share/fonts/truetype/liberation
+	/usr/share/fonts/truetype/libreoffice
+	/usr/share/fonts/truetype/lyx
+	/usr/share/fonts/truetype/noto
+	/usr/share/fonts/truetype/ubuntu
+	/usr/share/fonts/type1/urw-base35
+	/usr/share/fonts/X11/encodings/large
+/home/augusto/.local/share/fonts: caching, new cache contents: 559 fonts, 0 dirs
+/usr/share/i3/fonts: skipping, no such directory
+/usr/share/gnome/fonts: skipping, no such directory
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts: caching, new cache contents: 12 fonts, 6 dirs
+/usr/share/fonts/X11: caching, new cache contents: 0 fonts, 4 dirs
+/usr/share/fonts/X11/Type1: caching, new cache contents: 43 fonts, 0 dirs
+/usr/share/fonts/X11/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/X11/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/X11/misc: caching, new cache contents: 89 fonts, 0 dirs
+/usr/share/fonts/X11/util: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cMap: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap: caching, new cache contents: 0 fonts, 5 dirs
+/usr/share/fonts/cmap/adobe-cns1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-gb1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-japan1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-japan2: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/cmap/adobe-korea1: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/opentype: caching, new cache contents: 0 fonts, 4 dirs
+/usr/share/fonts/opentype/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/opentype/linux-libertine: caching, new cache contents: 13 fonts, 0 dirs
+/usr/share/fonts/opentype/noto: caching, new cache contents: 30 fonts, 0 dirs
+/usr/share/fonts/opentype/urw-base35: caching, new cache contents: 35 fonts, 0 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 13 dirs
+/usr/share/fonts/truetype/crosextra: caching, new cache contents: 8 fonts, 0 dirs
+/usr/share/fonts/truetype/dejavu: caching, new cache contents: 22 fonts, 0 dirs
+/usr/share/fonts/truetype/droid: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/freefont: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/gentium: caching, new cache contents: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/gentium-basic: caching, new cache contents: 8 fonts, 0 dirs
+/usr/share/fonts/truetype/lato: caching, new cache contents: 18 fonts, 0 dirs
+/usr/share/fonts/truetype/liberation: caching, new cache contents: 16 fonts, 0 dirs
+/usr/share/fonts/truetype/libreoffice: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/lyx: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/truetype/noto: caching, new cache contents: 1848 fonts, 0 dirs
+/usr/share/fonts/truetype/ubuntu: caching, new cache contents: 232 fonts, 0 dirs
+/usr/share/fonts/type1: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/type1/urw-base35: caching, new cache contents: 35 fonts, 0 dirs
+/var/lib/snapd/desktop/fonts: skipping, no such directory
+/home/augusto/.fonts: skipping, no such directory
+/usr/share/fonts/X11: skipping, looped directory detected
+/usr/share/fonts/cMap: skipping, looped directory detected
+/usr/share/fonts/cmap: skipping, looped directory detected
+/usr/share/fonts/opentype: skipping, looped directory detected
+/usr/share/fonts/truetype: skipping, looped directory detected
+/usr/share/fonts/type1: skipping, looped directory detected
+/usr/share/fonts/X11/Type1: skipping, looped directory detected
+/usr/share/fonts/X11/encodings: skipping, looped directory detected
+/usr/share/fonts/X11/misc: skipping, looped directory detected
+/usr/share/fonts/X11/util: skipping, looped directory detected
+/usr/share/fonts/cmap/adobe-cns1: skipping, looped directory detected
+/usr/share/fonts/cmap/adobe-gb1: skipping, looped directory detected
+/usr/share/fonts/cmap/adobe-japan1: skipping, looped directory detected
+/usr/share/fonts/cmap/adobe-japan2: skipping, looped directory detected
+/usr/share/fonts/cmap/adobe-korea1: skipping, looped directory detected
+/usr/share/fonts/opentype/font-awesome: skipping, looped directory detected
+/usr/share/fonts/opentype/linux-libertine: skipping, looped directory detected
+/usr/share/fonts/opentype/noto: skipping, looped directory detected
+/usr/share/fonts/opentype/urw-base35: skipping, looped directory detected
+/usr/share/fonts/truetype/crosextra: skipping, looped directory detected
+/usr/share/fonts/truetype/dejavu: skipping, looped directory detected
+/usr/share/fonts/truetype/droid: skipping, looped directory detected
+/usr/share/fonts/truetype/font-awesome: skipping, looped directory detected
+/usr/share/fonts/truetype/freefont: skipping, looped directory detected
+/usr/share/fonts/truetype/gentium: skipping, looped directory detected
+/usr/share/fonts/truetype/gentium-basic: skipping, looped directory detected
+/usr/share/fonts/truetype/lato: skipping, looped directory detected
+/usr/share/fonts/truetype/liberation: skipping, looped directory detected
+/usr/share/fonts/truetype/libreoffice: skipping, looped directory detected
+/usr/share/fonts/truetype/lyx: skipping, looped directory detected
+/usr/share/fonts/truetype/noto: skipping, looped directory detected
+/usr/share/fonts/truetype/ubuntu: skipping, looped directory detected
+/usr/share/fonts/type1/urw-base35: skipping, looped directory detected
+/usr/share/fonts/X11/encodings/large: skipping, looped directory detected
+/var/cache/fontconfig: not cleaning unwritable cache directory
+/home/augusto/.cache/fontconfig: cleaning cache directory
+/home/augusto/.cache/fontconfig: invalid cache file: 49a86a2c65b4870a981fc3a01c7973ae-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: de7c2d66a659c6e2f2822125c8553ef8-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: c591b767231fa2f27264eeeba77b3ef9-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 11f60dcdd86c6277d34afa9e02e44059-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 22a977b7cf8ebdc63a732b5887fb8c14-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: c8d47e72692102628157c3e301ee70ec-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: ff93bbe6f199be3546149b73e73fc30b-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 0eaed891a785f3535b9ae2a2b63b236b-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 0c5cf863aa2ed00529ba27afd2dc306a-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: f603e54d042cc2e17d63d69f9b361625-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 8e523638f5724d2c13e5e483ce47bd72-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 996bedf6044a4f7a62c79517d300477d-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 40e521c4e30a7bb7307842dda9aa38f9-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: a510ed1ddfa3da37746c27c8b6849276-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 7a4d460dfe07a6fd5294ddab462beca4-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 623e5aedb553a08090029b0470f79864-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: d191d6de85290ce290f5b94061df642a-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: ef19098f89994e55f8d6ae154bdb614e-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 413f5322f42a2546322e4e3dea7a9263-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 7737bf68ddec43170072705fdb5935a6-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: c706adf67c513cd6b5ffc774e6592439-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: fa3f67956ea3df491822404596c39f1a-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 19fb72428a8804b007b6c4162852b07c-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 89d82c208a27c22d9f85a08e6bba7bf8-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 3dd0f74d91f49c133cec414fa0d50cf8-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: d82e6220cc80cbb1bc678f23d97be88b-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 3b3a352df6ebe35048e81dcf5a50d43e-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 7ac704fa83974c4be2d58a421c040869-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: aabcefc074fb136f327e39278d2b4114-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 0d90cb365c55c257ad768e7ca5187995-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 4170a761fef7a091fe7dafd5642a9b1c-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: e13da083d235f96106bd2badf96b79c6-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 8b234392ad29bd7825cff6ec8009e3ed-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: a5b87e36ed5ed46f186ad92e2bccac55-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 9d1a8076ffde3a0aa2848966645b9091-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 48031c5aad0054b5105e3bc56f397b6a-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 7287b1fe2fdf992375bec7f78d9592eb-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 801440100a297f5c9137eabdfc002f71-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: d64b6c148a86813eb8d2f9a261b8e1e1-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 0aeb4eaa3109539add6e0e8fa03f0757-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: d374ca08698f5e00cedf2a2b65aab276-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 792c9f3d311eea869b0e48086b870421-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 69f7e8a0ff402d2864580e725ffe7f6c-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: d3b84e507f7cf3ce4f0373b1413e1613-le64.cache-9
+/home/augusto/.cache/fontconfig: invalid cache file: 82222cf5f4735f028cff0aa7ffce218d-le64.cache-9
+/home/augusto/.fontconfig: not cleaning non-existent cache directory
+fc-cache: succeeded
+Fonts and related utilities installation completed.
+Installing Brave browser...
+  ✅ Brave browser is already installed. 
+Brave browser installation completed.
+Installing Google Chrome...
+  ✅ Google Chrome is already installed. 
+Google Chrome installation completed.
+Installing Microsoft Edge...
+  ✅ Microsoft Edge is already installed. 
+Microsoft Edge installation completed.
+----------------------------------------
+Installation completed at Sun Feb 15 09:35:46 PM WET 2026
