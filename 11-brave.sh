@@ -8,6 +8,8 @@
 # --log, -l : Log File
 # --help, -h : Display this help message
 
+set -euo pipefail
+
 . ./config.conf
 . ./00-common.sh
 

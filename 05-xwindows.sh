@@ -8,6 +8,8 @@
 # --log, -l : Log File
 # --help, -h : Display this help message
 
+set -euo pipefail
+
 . ./config.conf
 . ./00-common.sh
 
@@ -49,7 +51,7 @@ PACKAGES=(
 log "${BLUE}Installing X Window System and related utilities...${NOFORMAT}"
 for package in "${PACKAGES[@]}"; do
     # Check if package is already installed
-    if dpkg -l | grep -q "$package"; then
+    if dpkg-query -W -f='${Status}' "${package}" 2>/dev/null | grep -q "ok installed"; then
         log "${GREEN} ✅ $package is already installed.${NOFORMAT}"
         continue
     fi

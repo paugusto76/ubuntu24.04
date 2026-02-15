@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 LOG_FILE="install.log"
 # create log file if it doesn't exist
 if [[ ! -f "$LOG_FILE" ]]; then

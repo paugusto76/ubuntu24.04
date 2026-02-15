@@ -1,14 +1,14 @@
-Installation started at Sun Feb 15 09:35:37 PM WET 2026
+Installation started at Sun Feb 15 09:58:44 PM WET 2026
 ----------------------------------------
 Updating apt package list...
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
-Hit:3 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:5 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:2 https://pt.archive.ubuntu.com/ubuntu noble InRelease
-Hit:4 https://pt.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:3 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:4 https://pt.archive.ubuntu.com/ubuntu noble InRelease
+Hit:5 https://pt.archive.ubuntu.com/ubuntu noble-updates InRelease
 Hit:6 https://pt.archive.ubuntu.com/ubuntu noble-backports InRelease
 Reading package lists...
 Building dependency tree...
@@ -88,9 +88,6 @@ Installing X Window System and related utilities...
  ✅ scrot is already installed.
  ✅ playerctl is already installed.
  ✅ gdm-settings is already installed.
- ✅ filezilla is already installed.
- ✅ keepassxc is already installed.
- ✅ cubic is already installed.
 X Window System and related utilities installation completed.
 Installing fonts and related utilities...
  ✅ fonts-noto-cjk is already installed.
@@ -516,54 +513,46 @@ Font directories:
 /usr/share/fonts/X11/encodings/large: skipping, looped directory detected
 /var/cache/fontconfig: not cleaning unwritable cache directory
 /home/augusto/.cache/fontconfig: cleaning cache directory
-/home/augusto/.cache/fontconfig: invalid cache file: 49a86a2c65b4870a981fc3a01c7973ae-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: de7c2d66a659c6e2f2822125c8553ef8-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: c591b767231fa2f27264eeeba77b3ef9-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 11f60dcdd86c6277d34afa9e02e44059-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 22a977b7cf8ebdc63a732b5887fb8c14-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: c8d47e72692102628157c3e301ee70ec-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: ff93bbe6f199be3546149b73e73fc30b-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 0eaed891a785f3535b9ae2a2b63b236b-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 0c5cf863aa2ed00529ba27afd2dc306a-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: f603e54d042cc2e17d63d69f9b361625-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 8e523638f5724d2c13e5e483ce47bd72-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 996bedf6044a4f7a62c79517d300477d-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 40e521c4e30a7bb7307842dda9aa38f9-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: a510ed1ddfa3da37746c27c8b6849276-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 7a4d460dfe07a6fd5294ddab462beca4-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 623e5aedb553a08090029b0470f79864-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: d191d6de85290ce290f5b94061df642a-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: ef19098f89994e55f8d6ae154bdb614e-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 413f5322f42a2546322e4e3dea7a9263-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 7737bf68ddec43170072705fdb5935a6-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: c706adf67c513cd6b5ffc774e6592439-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: fa3f67956ea3df491822404596c39f1a-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 19fb72428a8804b007b6c4162852b07c-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 89d82c208a27c22d9f85a08e6bba7bf8-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 3dd0f74d91f49c133cec414fa0d50cf8-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: d82e6220cc80cbb1bc678f23d97be88b-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 3b3a352df6ebe35048e81dcf5a50d43e-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 7ac704fa83974c4be2d58a421c040869-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: aabcefc074fb136f327e39278d2b4114-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 0d90cb365c55c257ad768e7ca5187995-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 4170a761fef7a091fe7dafd5642a9b1c-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: e13da083d235f96106bd2badf96b79c6-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 8b234392ad29bd7825cff6ec8009e3ed-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: a5b87e36ed5ed46f186ad92e2bccac55-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 9d1a8076ffde3a0aa2848966645b9091-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 48031c5aad0054b5105e3bc56f397b6a-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 7287b1fe2fdf992375bec7f78d9592eb-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 801440100a297f5c9137eabdfc002f71-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: d64b6c148a86813eb8d2f9a261b8e1e1-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 0aeb4eaa3109539add6e0e8fa03f0757-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: d374ca08698f5e00cedf2a2b65aab276-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 792c9f3d311eea869b0e48086b870421-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 69f7e8a0ff402d2864580e725ffe7f6c-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: d3b84e507f7cf3ce4f0373b1413e1613-le64.cache-9
-/home/augusto/.cache/fontconfig: invalid cache file: 82222cf5f4735f028cff0aa7ffce218d-le64.cache-9
 /home/augusto/.fontconfig: not cleaning non-existent cache directory
 fc-cache: succeeded
 Fonts and related utilities installation completed.
+Installing Windows Manager and related utilities...
+ ✅ i3-wm is already installed.
+ ✅ i3blocks is already installed.
+ ✅ suckless-tools is already installed.
+ ✅ rofi is already installed.
+ ✅ xautolock is already installed.
+ ✅ brightnessctl is already installed.
+ ✅ flameshot is already installed.
+ ✅ pulseaudio-utils is already installed.
+ ✅ alsa-utils is already installed.
+ ✅ thunar is already installed.
+ ✅ sysstat is already installed.
+ --------------------------------------------------- 
+ -> Building i3lock-color (used by betterlockscreen) 
+  ✅ Package autoconf is installed. 
+  ✅ Package gcc is installed. 
+  ✅ Package make is installed. 
+  ✅ Package pkg-config is installed. 
+  ✅ Package libpam0g-dev is installed. 
+  ✅ Package libcairo2-dev is installed. 
+  ✅ Package libfontconfig1-dev is installed. 
+  ✅ Package libxcb-composite0-dev is installed. 
+  ✅ Package libev-dev is installed. 
+  ✅ Package libx11-xcb-dev is installed. 
+  ✅ Package libxcb-xkb-dev is installed. 
+  ✅ Package libxcb-xinerama0-dev is installed. 
+  ✅ Package libxcb-randr0-dev is installed. 
+  ✅ Package libxcb-image0-dev is installed. 
+  ✅ Package libxcb-util0-dev is installed. 
+  ✅ Package libxcb-xrm-dev is installed. 
+  ✅ Package libxkbcommon-dev is installed. 
+  ✅ Package libxkbcommon-x11-dev is installed. 
+  ✅ Package libjpeg-dev is installed. 
+  ✅ Package libgif-dev is installed. 
+  ✅ Package i3lock is installed. 
+  ✅ Package betterlockscreen is installed. 
+Windows Manager and related utilities installation completed.
 Installing Brave browser...
   ✅ Brave browser is already installed. 
 Brave browser installation completed.
@@ -573,5 +562,8 @@ Google Chrome installation completed.
 Installing Microsoft Edge...
   ✅ Microsoft Edge is already installed. 
 Microsoft Edge installation completed.
+Installing Gimp image editor...
+  ✅ Gimp image editor is already installed. 
+Gimp image editor installation completed.
 ----------------------------------------
-Installation completed at Sun Feb 15 09:35:46 PM WET 2026
+Installation completed at Sun Feb 15 09:58:58 PM WET 2026
