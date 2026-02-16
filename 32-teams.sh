@@ -45,6 +45,7 @@ Suites: stable
 Components: main
 Signed-By: /etc/apt/keyrings/teams-for-linux.asc
 Architectures: amd64" | sudo tee /etc/apt/sources.list.d/teams-for-linux.sources
+    sudo apt update -y 2>&1 | tee -a "$LOG_FILE"
   fi
 
   if command -v teams-for-linux >/dev/null 2>&1; then

@@ -69,4 +69,14 @@ for package in "${PACKAGES[@]}"; do
     sudo apt install -y "$package" 2>&1 | tee -a "$LOG_FILE"
     log "${GREEN}  ✅ $package installation completed. ${NOFORMAT}"
 done
+
+if command -v starship >/dev/null 2>&1; then
+    echo -e "${GREEN}  ✅ Package starship is installed. ${NOFORMAT}"
+else
+    echo -e "${YELLOW}  ⬇️ Package starship is not installed. ${NOFORMAT}"
+    echo "    Installing starship..."
+    curl -sS https://starship.rs/install.sh | sh -s -- -y 2>&1 | tee -a "$LOG_FILE"
+    log "${GREEN}  ✅ Starship installation completed. ${NOFORMAT}"
+fi
+
 log "${WHITE}Terminal utilities installation completed.${NOFORMAT}"
