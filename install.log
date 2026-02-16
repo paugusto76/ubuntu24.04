@@ -1,15 +1,18 @@
-Installation started at Sun Feb 15 09:58:44 PM WET 2026
+Installation started at Mon Feb 16 12:30:55 AM WET 2026
 ----------------------------------------
 Updating apt package list...
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
-Hit:2 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:3 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:4 https://pt.archive.ubuntu.com/ubuntu noble InRelease
-Hit:5 https://pt.archive.ubuntu.com/ubuntu noble-updates InRelease
-Hit:6 https://pt.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:3 https://ppa.launchpadcontent.net/cubic-wizard/release/ubuntu noble InRelease
+Hit:5 https://ppa.launchpadcontent.net/zhangsongcui3371/fastfetch/ubuntu noble InRelease
+Hit:6 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:9 https://repository.spotify.com stable InRelease
+Hit:1 https://pt.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 https://pt.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 https://pt.archive.ubuntu.com/ubuntu noble-backports InRelease
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -565,5 +568,28 @@ Microsoft Edge installation completed.
 Installing Gimp image editor...
   ✅ Gimp image editor is already installed. 
 Gimp image editor installation completed.
+Installing FileZilla FTP client...
+  ✅ FileZilla FTP client is already installed. 
+FileZilla FTP client installation completed.
+Installing keepassxc password manager...
+  ✅ keepassxc password manager is already installed. 
+keepassxc password manager installation completed.
+Installing Spotify music streaming service...
+  ✅ Spotify music streaming service is already installed. 
+Spotify music streaming service installation completed.
+Installing VLC media player...
+  ✅ VLC media player is already installed. 
+VLC media player installation completed.
+Installing Cubic ISO customization tool...
+  ✅ Cubic ISO customization tool is already installed. 
+Cubic ISO customization tool installation completed.
+Installing QEMU virtual machine emulator...
+  ✅ Package qemu-system-x86 is installed. 
+  ✅ Package libvirt-daemon-system is installed. 
+  ✅ Package libvirt-clients is installed. 
+  ✅ Package virtinst is installed. 
+  ✅ Package bridge-utils is installed. 
+  ✅ Package virt-manager is installed. 
+QEMU virtual machine emulator installation completed.
 ----------------------------------------
-Installation completed at Sun Feb 15 09:58:58 PM WET 2026
+Installation completed at Mon Feb 16 12:31:05 AM WET 2026
