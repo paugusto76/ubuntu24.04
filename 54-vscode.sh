@@ -49,6 +49,13 @@ else
   fi
 fi
 
+if [ ! -f /etc/apt/sources.list.d/microsoft-ubuntu-noble-prod.list ]; then
+  echo -e "${YELLOW}  Adding packages.microsoft.com/ubuntu/24.04/prod noble main repository... ${NOFORMAT}"
+  curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+  sudo install -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/
+  rm microsoft.gpg
+  sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/ubuntu/24.04/prod noble main" > /etc/apt/sources.list.d/microsoft-ubuntu-noble-prod.list'
+fi
 
 if [ "$install_code" -eq 1 ]; then
     log "${BLUE}Installing Visual Studio Code...${NOFORMAT}"
