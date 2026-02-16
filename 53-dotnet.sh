@@ -41,6 +41,11 @@ PACKAGES=(
 )
 
 if [ "$install_dotnet_sdks" -eq 1 ]; then
+    if ! grep -q "dotnet/backports" /etc/apt/sources.list.d/*.sources; then
+    echo -e "${YELLOW}  Adding dotnet/backports repository... ${NOFORMAT}"
+    sudo add-apt-repository -y ppa:dotnet/backports
+    fi
+
     log "${BLUE}Installing Dotnet SDKs...${NOFORMAT}"
 
     sudo apt-get update -y 2>&1 | tee -a "$LOG_FILE"

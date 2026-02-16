@@ -49,18 +49,16 @@ else
   fi
 fi
 
-if [ ! -f /etc/apt/sources.list.d/vscode.sources ]; then
-  if [ ! -f /etc/apt/sources.list.d/vscode.list ]; then
-    echo -e "${YELLOW}  Adding packages.microsoft.com/repos/code stable main repository... ${NOFORMAT}"
-    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
-  fi
-fi
-
-
 
 if [ "$install_code" -eq 1 ]; then
     log "${BLUE}Installing Visual Studio Code...${NOFORMAT}"
 
+    if [ ! -f /etc/apt/sources.list.d/vscode.sources ]; then
+        if [ ! -f /etc/apt/sources.list.d/vscode.list ]; then
+            echo -e "${YELLOW}  Adding packages.microsoft.com/repos/code stable main repository... ${NOFORMAT}"
+            echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+        fi
+    fi
 
     if command -v code >/dev/null 2>&1; then
         log "${GREEN}  ✅ Visual Studio Code is installed. ${NOFORMAT}"
