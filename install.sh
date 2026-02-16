@@ -37,6 +37,14 @@ echo "----------------------------------------" | tee -a "$LOG_FILE"
 
 ./31-libreoffice.sh --log "$LOG_FILE"
 ./32-teams.sh --log "$LOG_FILE"
+./33-drawio.sh --log "$LOG_FILE"
+./34-powershell.sh --log "$LOG_FILE"
+
+./51-nodejs.sh --log "$LOG_FILE"
+./52-rust.sh --log "$LOG_FILE"
+./53-dotnet.sh --log "$LOG_FILE"
+./54-vscode.sh --log "$LOG_FILE"
+./55-cursor.sh --log "$LOG_FILE"
 
 ./99-final.sh --log "$LOG_FILE"
 
