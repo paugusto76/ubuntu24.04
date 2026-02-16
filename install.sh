@@ -35,6 +35,11 @@ echo "----------------------------------------" | tee -a "$LOG_FILE"
 ./26-cubic.sh --log "$LOG_FILE"
 ./27-qemu.sh --log "$LOG_FILE"
 
+./31-libreoffice.sh --log "$LOG_FILE"
+./32-teams.sh --log "$LOG_FILE"
+
+./99-final.sh --log "$LOG_FILE"
+
 # log end of installation
 echo "----------------------------------------" | tee -a "$LOG_FILE"
 echo "Installation completed at $(date)" | tee -a "$LOG_FILE"
