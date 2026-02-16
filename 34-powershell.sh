@@ -37,6 +37,12 @@ done
 if [ "$install_powershell" -eq 1 ]; then
     log "${BLUE}Installing Powershell...${NOFORMAT}"
 
+    source /etc/os-release
+    wget -q https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb -O /tmp/packages-microsoft-prod.deb
+    sudo dpkg -i /tmp/packages-microsoft-prod.deb
+    rm /tmp/packages-microsoft-prod.deb
+    sudo apt-get update -y 2>&1 | tee -a "$LOG_FILE"
+
     if command -v pwsh >/dev/null 2>&1; then
         log "${GREEN}  ✅ Powershell is installed. ${NOFORMAT}"
     else
