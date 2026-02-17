@@ -42,7 +42,7 @@ if [[ "$install_spotify" -eq 1 ]]; then
     else
         log "${YELLOW}  ⬇️ Spotify music streaming service is not installed. ${NOFORMAT}"
         log "    Installing Spotify music streaming service..."
-        sudo snap install spotify -y 2>&1 | tee -a "$LOG_FILE"
+        sudo snap install spotify 2>&1 | tee -a "$LOG_FILE"
         log "${GREEN}  ✅ Spotify music streaming service installation completed. ${NOFORMAT}"
     fi
 else

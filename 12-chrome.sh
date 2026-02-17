@@ -2,7 +2,7 @@
 
 # Author: Pedro Augusto
 # Date: 2025-02-15
-# Description: This script will install Google Chrome
+# Description: This script will install Chromium
 
 # Parameters
 # --log, -l : Log File
@@ -36,20 +36,21 @@ done
 
 if [[ "$install_chrome" -eq 1 ]]; then
 
-    log "${BLUE}Installing Google Chrome...${NOFORMAT}"
-    if command -v google-chrome > /dev/null 2>&1; then
-        log "${GREEN}  ✅ Google Chrome is already installed. ${NOFORMAT}"
+    log "${BLUE}Installing Chromium...${NOFORMAT}"
+    if command -v chromium > /dev/null 2>&1; then
+        log "${GREEN}  ✅ Chromium is already installed. ${NOFORMAT}"
     else
-        log "${YELLOW}  ⬇️ Google Chrome is not installed. ${NOFORMAT}"
-        log "    Installing Google Chrome..."
-        curl -fsSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /tmp/google-chrome.deb 2>&1 | tee -a "$LOG_FILE"
-        sudo dpkg -i /tmp/google-chrome.deb 2>&1 | tee -a "$LOG_FILE"
-        sudo apt-get install -f -y 2>&1 | tee -a "$LOG_FILE"
-        rm /tmp/google-chrome.deb
-        log "${GREEN}  ✅ Google Chrome installation completed. ${NOFORMAT}"
+        log "${YELLOW}  ⬇️ Chromium is not installed. ${NOFORMAT}"
+        log "    Installing Chromium..."
+        #curl -fsSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /tmp/google-chrome.deb 2>&1 | tee -a "$LOG_FILE"
+        #sudo dpkg -i /tmp/google-chrome.deb 2>&1 | tee -a "$LOG_FILE"
+        #sudo apt-get install -f -y 2>&1 | tee -a "$LOG_FILE"
+        #rm /tmp/google-chrome.deb
+        sudo snap install chromium 2>&1 | tee -a "$LOG_FILE"
+        log "${GREEN}  ✅ Chromium installation completed. ${NOFORMAT}"
     fi
 else
-    log "${YELLOW}Skipping Google Chrome installation...${NOFORMAT}"
+    log "${YELLOW}Skipping Chromium installation...${NOFORMAT}"
 fi
 
-log "${WHITE}Google Chrome installation completed.${NOFORMAT}"
+log "${WHITE}Chromium installation completed.${NOFORMAT}"
