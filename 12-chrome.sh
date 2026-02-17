@@ -51,5 +51,5 @@ if [[ "$install_chrome" -eq 1 ]]; then
 else
     log "${YELLOW}Skipping Google Chrome installation...${NOFORMAT}"
 fi
-sudo rm /etc/apt/sources.list.d/google-chrome.list 2>/dev/null || true
+
 log "${WHITE}Google Chrome installation completed.${NOFORMAT}"

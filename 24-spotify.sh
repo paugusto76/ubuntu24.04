@@ -36,20 +36,13 @@ done
 
 if [[ "$install_spotify" -eq 1 ]]; then
 
-    if [ ! -f /etc/apt/sources.list.d/spotify.list ]; then
-        log "${YELLOW}  Adding Spotify repository... ${NOFORMAT}"
-        curl -sS https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
-        echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-    fi
-
     log "${BLUE}Installing Spotify music streaming service...${NOFORMAT}"
     if command -v spotify > /dev/null 2>&1; then
         log "${GREEN}  ✅ Spotify music streaming service is already installed. ${NOFORMAT}"
     else
         log "${YELLOW}  ⬇️ Spotify music streaming service is not installed. ${NOFORMAT}"
         log "    Installing Spotify music streaming service..."
-        sudo apt-get update -y 2>&1 | tee -a "$LOG_FILE"
-        sudo apt install -y spotify-client 2>&1 | tee -a "$LOG_FILE"
+        sudo snap install spotify -y 2>&1 | tee -a "$LOG_FILE"
         log "${GREEN}  ✅ Spotify music streaming service installation completed. ${NOFORMAT}"
     fi
 else
