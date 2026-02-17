@@ -42,10 +42,6 @@ if [[ "$install_chrome" -eq 1 ]]; then
     else
         log "${YELLOW}  ⬇️ Chromium is not installed. ${NOFORMAT}"
         log "    Installing Chromium..."
-        #curl -fsSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /tmp/google-chrome.deb 2>&1 | tee -a "$LOG_FILE"
-        #sudo dpkg -i /tmp/google-chrome.deb 2>&1 | tee -a "$LOG_FILE"
-        #sudo apt-get install -f -y 2>&1 | tee -a "$LOG_FILE"
-        #rm /tmp/google-chrome.deb
         sudo snap install chromium 2>&1 | tee -a "$LOG_FILE"
         log "${GREEN}  ✅ Chromium installation completed. ${NOFORMAT}"
     fi
